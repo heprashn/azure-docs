@@ -53,6 +53,10 @@ You can use Azure Arc-enabled VMware vSphere (preview) in these supported region
 
 - West Europe
 
+- Australia East
+
+- Canada Central
+
 ## Next steps
 
 - [Connect VMware vCenter to Azure Arc using the helper script](quick-start-connect-vcenter-to-arc-using-script.md)
