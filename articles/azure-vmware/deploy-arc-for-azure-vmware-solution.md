@@ -159,8 +159,7 @@ After you've enabled VMs to be managed from Azure, you can install guest managem
 - Customers can view the list of VM extensions available in public preview.
     - Change tracking
     - Log analytics
-    - Update management
-    - Azure policy guest configuration
+    - Azure Automation Hybrid Runbook Worker extension (preview)
 
  **Azure VMware Solution private cloud with Azure Arc**
 
@@ -320,7 +319,7 @@ Use the **`Set Credential`** command to update the provider credentials for appl
     `./.temp/.env/Scripts/activate`
 1. Run the following command.
 
-    `az arcappliance setcredential vmware --kubeconfig kubeconfig`
+    `az arcappliance update-infracredentials hci --kubeconfig`
 
 1. Run the onboard command again. See step 3 in the [Process to onboard]() in Arc for Azure VMware Preview. 
     
@@ -407,7 +406,7 @@ For the final step, you'll need to delete the resource bridge VM and the VM temp
 
 **Is Arc supported in all the Azure VMware Solution regions?**
  
-Arc is supported in EastUS and WestEU regions however we are working to extend the regional support.
+Arc is supported in EastUS, WestEU, Australia East, Canada Central, UK South and Southeast Asia regions however we are working to extend the regional support.
 
 **How does support work?**
 
